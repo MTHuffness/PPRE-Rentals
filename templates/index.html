@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Pikes Peak Real Estate Sales & Property Management{% endblock %}
+
+{% block body %}
+    <div class="row" style="min-height: 37vh;">
+        <div class="col-md-12" id="sample_pic"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="center-title">Welcome!</h3>
+            <p class="font-1">Thanks for visiting my website. My local expertise and broad real estate experience will
+                benefit you whether you are serious about buying or selling a home at this time, or are a
+                returning client checking out the many homeowner resources we offer.<br><br>
+
+                As a local area expert with extensive knowledge of the communities, my objective is to
+                work diligently to assist you in meeting your real estate goals.<br><br>
+
+                If you are considering buying or selling a home, or would just like to have additional
+                information about real estate in your area, please navigate this website in its entirety,
+                as all the resources you need are available right here online. Also, for a more personal,
+                one-on-one approach - don't hesitate to call or e-mail me.<br><br>
+
+                Please consider my website as your online source for real estate, mortgage and local
+                community information. Be sure to bookmark this site and return often for the latest
+                property listing updates.<br><br>
+
+                I consider this community an excellent place to reside and would love to share with you
+                my enthusiasm for the many neighborhoods that encompass the area. I pride myself on providing
+                unparalleled service and look forward to developing a long-term relationship with you.</p>
+        </div>
+        <div class="col-md-6 no_margin">
+            <!--Carousel Wrapper-->
+            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner carousel-home" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="view hm-black-light">
+                            <img class="d-block w-100"
+                                 src="../static/img/images/birchwood/frontpic2-2.jpg"
+                                 alt="Birchwood Village">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Birchwood Village</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view hm-black-light">
+                            <img class="d-block w-100"
+                                 src="../static/img/images/fountain%20terrace/frontpic1.jpg"
+                                 alt="Fountain Terrace">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Fountain Terrace</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view hm-black-light">
+                            <img class="d-block w-100"
+                                 src="../static/img/images/pinewood/frontpic2.jpg"
+                                 alt="Pinewood">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h3 class="h3-responsive">Pinewood Apartments</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--/.Carousel Wrapper-->
+        </div>
+    </div>
+{% endblock %}}

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact PPRE{% endblock %}
+
+{% block body %}
+    <div class="row spacer"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 class="font-centered">Contact Information</h4>
+            <p class="font-1 font_size-1 font-centered">6510-A S. Academy Blvd. #300
+            <br>Colorado Springs, CO 80906
+                <br>mgmt.ppre2000@gmail.com</p>
+            <div>
+                <img src="../static/img/images/birchwoodmap.png"
+                     alt="Pikes Peak Property Management Map" style="width: 100%">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <p class="font-1 font_size-1">For more information on a specific property,
+                please feel free to contact the number above or complete & submit the
+                information below.</p>
+            <form class="form-horizontal" action="" method="post">
+                <!-- Applicant Information -->
+                <legend>Applicant Information:</legend>
+                <!-- Text input-->
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input id="applicant"
+                               name="applicant"
+                               placeholder="Full Name"
+                               class="form-control contact_input"
+                               type="text" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input id="email_addr"
+                               name="email_addr"
+                               placeholder="Email Address"
+                               class="form-control contact_input"
+                               type="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input id="phone"
+                               name="phone"
+                               placeholder="Phone Number"
+                               class="form-control contact_input"
+                               type="tel" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="comments">Comments:</label>
+                  <div class="col-md-12">
+                    <textarea class="form-control contact_input" id="comments"
+                              name="comments"
+                              placeholder="Please enter any comments here (if applicable)"></textarea>
+                  </div>
+                </div>
+                    <label>
+                        <legend>Select what you are inquiring about:</legend>
+                        <select class="contactSelector" id="ownerInquiry" onchange="dropDown(this)" required>
+                            <option value="0">Please Choose</option>
+                            <option value="1">Full Service Property Management</option>
+                            <option value="2">Landlord Leasing Service</option>
+                            <option value="3">Renting a Property</option>
+                            <option value="4">Home Finder Service</option>
+                            <option value="5">Seling a Home</option>
+                            <option value="6">Home Buying</option>
+                            <option value="7">Investment Property Buying</option>
+                            <option value="8">Other</option>
+                        </select>
+                    </label>
+                    <label id="chooseProperty">
+                        <h4>Select Your Property Interest</h4>
+                            <select class="contactSelector" required>
+                                <option value="0">Property of Interest</option>
+                                <option value="1">Birchwood Village Apartments</option>
+                                <option value="2">Fountain Terrace Apartments</option>
+                                <option value="3">Pinewood Apartments</option>
+                                <option value="3">Single Home Property (Specify in Comments)</option>
+                            </select>
+                    </label>
+                    <button class="contact_submit" type="submit" name="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}}

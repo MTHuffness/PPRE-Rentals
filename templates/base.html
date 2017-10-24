@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="{{ url_for('static', filename='css/mdb.min.css') }}" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar style_navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-header nav_style">
+                    <a id="nav_title" class="navbar-brand" href="{{ url_for('home_page') }}">Pikes Peak Real Estate Sales & Property Management, LLC</a>
+                </div>
+                <ul class="nav navbar-nav nav_style">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home_page') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('prop_page') }}">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about_page') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contact_page') }}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container page_body">
+            {% block body %}{% endblock %}
+        </div>
+
+        <!--Footer-->
+        <footer class="page-footer center-on-small-only stylish-color-dark">
+
+            <!--Footer Links-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <h5 class="title">Links</h5>
+                        <ul>
+                            <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                            <li><a href="{{ url_for('prop_page') }}">Properties</a></li>
+                            <li><a href="{{ url_for('about_page') }}">About</a></li>
+                            <li><a href="{{ url_for('contact_page') }}">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h5 class="title">Hours</h5>
+                        <ul>
+                            <li>Monday - Saturday: 1pm - 4pm</li>
+                            <li>Sunday: Closed</li>
+                            <li style="font-weight: bold">Please email for appointments</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h5 class="title">Contact:</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Pikes Peak Real Estate Sales & property Mgmt, LLC<br>
+                            Agent: Yolanda Smith<br>
+                            651-A S. Academy Blvd. #300<br>
+                            Colorado Springs, CO 80906<br>
+                            Phone: 719-310-8302<br>
+                            Broker ID: 40042765<br>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Footer Links-->
+
+            <!--Copyright-->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © 2015 Copyright: Pikes Peak Real Estate Sales & Property Management, LLC
+                </div>
+            </div>
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
+
+            <!-- SCRIPTS -->
+            <!-- JQuery -->
+            <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>

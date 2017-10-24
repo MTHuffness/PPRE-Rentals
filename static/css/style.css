@@ -1,0 +1,220 @@
+/*************************************************************************************/
+/*                                  Body styling                                     */
+/*************************************************************************************/
+
+html {
+    min-height: 100vh;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));*/
+    background: peachpuff;
+    font-size: 12px;
+    color: peachpuff;
+}
+.no_margin {
+    margin: 0;
+    padding: 0;
+}
+.spacer {
+    margin-bottom: 5vh;
+}
+
+/*************************************************************************************/
+/*                                  Font styling                                     */
+/*************************************************************************************/
+
+.font-1 {
+    color: white;
+}
+.font_size-1 {
+    font-size: 1rem;
+}
+.font-centered {
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+/*************************************************************************************/
+/*                                  Navbar styling                                   */
+/*************************************************************************************/
+
+.style_navbar {
+    background: rgba(128, 0, 32, .75);
+    margin-bottom: 0;
+    border-bottom: 1px solid peachpuff;
+}
+#nav_title {
+    font-size: 1.5rem;
+}
+.nav_style li a, .nav_style a {
+    color: peachpuff;
+    font-size: 1.2rem;
+}
+    .nav_style li a:hover {
+        color: rgba(128, 0, 32, .75);
+        background: peachpuff;
+        font-size: .75rem;
+        font-weight: bold;
+    }
+    .nav_style a:hover {
+        color: white;
+    }
+
+/*************************************************************************************/
+/*                               Page Body Styling                                   */
+/*************************************************************************************/
+
+.page_body {
+    background: rgba(128, 0, 32, .6);
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 92vh;
+    box-shadow: 0 0 40px rgba(128, 0, 32, 1);
+}
+
+/*************************************************************************************/
+/*                              COLO Pic Styling                                     */
+/*************************************************************************************/
+
+#sample_pic {
+    background: url('../img/images/cs6.png') no-repeat left top;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+/*************************************************************************************/
+/*                      Carousel/Welcome Styling                                     */
+/*************************************************************************************/
+.center-title {
+    text-align: center;
+}
+.carousel-home {
+    height: 55vh;
+}
+.carousel-caption {
+    margin-bottom: 10%;
+}
+
+/*************************************************************************************/
+/*                                  Footer Styling                                   */
+/*************************************************************************************/
+
+.footer-top {
+    background: rgba(128, 0, 32, .75);
+}
+
+/*************************************************************************************/
+/*                             Properties Styling                                    */
+/*************************************************************************************/
+
+.tile_house {
+    min-height: 30vh;
+}
+.tile_title {
+    margin-top: 5vh;
+    background: linear-gradient(to right,
+    rgba(128, 0, 32, .1) 0%,
+    rgba(128, 0, 32, .50) 50%,
+    rgba(128, 0, 32, .1) 100%);
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px peachpuff;
+    font-weight: bold;
+}
+.prop_tile {
+    background-size: 100% 100%;
+    margin: 1vh;
+}
+    .prop_tile:hover {
+        opacity: .75;
+        border: 1px solid rgb(128, 0, 32);
+        box-shadow: 0 0 5px peachpuff;
+        cursor: pointer;
+        transition: 1s;
+    }
+.bw_tile {
+    background: url('../img/images/birchwood/frontpic2-2.jpg') no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.pw_tile {
+    background: url('../img/images/pinewood/frontpic1.jpg') no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.ft_tile {
+    background: url('../img/images/fountain terrace/frontpic1.jpg') no-repeat left top;
+    background-size: 100% 100%;
+}
+
+.sp_tile {
+    background: url('../img/images/Property/Kearney/frontpic.JPG') no-repeat left top;
+    background-size: 100% 100%;
+}
+.prop_detail {
+    min-height: 62vh;
+    display: none;
+    padding: 1vh;
+}
+    .prop_detail img {
+        border: 1px solid peachpuff;
+        border-radius: 5px;
+        padding: 5px;
+        object-fit: fill;
+    }
+.prop_detail_summary {
+    margin-top: 5vh;
+}
+.carousel-prop {
+    height: 61vh;
+}
+.view_appt {
+    background: peachpuff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+    .view_appt:hover {
+        background: rgb(128, 0, 32);
+        color: peachpuff;
+    }
+
+/*************************************************************************************/
+/*                                  About Styling                                    */
+/*************************************************************************************/
+
+.about_pic {
+    background: url('../img/images/cs5.png') no-repeat left top;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+/*************************************************************************************/
+/*                                  Contact Styling                                  */
+/*************************************************************************************/
+
+.contact_input {
+    color: peachpuff;
+}
+    .contact_input:hover {
+        color: white;
+    }
+
+input::-webkit-input-placeholder, textarea:-ms-input-placeholder {
+color: white !important;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+color: white !important;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+color: white !important;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: white !important;
+}
